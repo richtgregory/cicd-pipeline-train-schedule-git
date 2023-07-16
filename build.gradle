@@ -5,3 +5,13 @@
  * To learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.2.1/samples
  * This project uses @Incubating APIs which are subject to change.
  */
+task sayHello << {
+  println 'Hello, World!'
+}
+
+task anotherTask << {
+  println 'This is another task'
+}
+
+sayHello.dependsOn anotherTask
+
